@@ -5,7 +5,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__container">
+        <div class="header__title">My CV</div>
+        <nav>
+          <ul class="header__nav">
+            <li class="header__link"><a href="#about">About</a></li>
+            <li class="header__link"><a href="#skills">Skills</a></li>
+            <li class="header__link"><a href="#projects">Projects</a></li>
+            <li class="header__link"><a href="#education">Education</a></li>
+            <li class="header__link"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Main -->
+    <main>
+      <!-- Banner -->
+      <section class="banner banner-section" id="banner">
+        <div class="banner__overlay"></div>
+        <img
+          src="https://demo.templateflip.com/creative-cv/images/cc-bg-1.jpg"
+          alt=""
+          class="banner__background"
+        />
+        <div class="banner__image">
+          <img
+            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"
+            alt=""
+          />
+        </div>
+        <h2 class="banner__name">Nguyen Tan Tai</h2>
+        <p class="banner__job">Front-end developer</p>
+        <button class="banner__btn">Download CV</button>
+        <ul class="banner-social">
+          <li class="banner-social__item">
+            <a href="https://www.facebook.com/ntt21082001" target="_blank">
+              <i class="banner-social__icon fab fa-facebook"></i
+            ></a>
+          </li>
+          <li class="banner-social__item">
+            <a href="https://github.com/tainguyen21" target="_blank">
+              <i class="banner-social__icon fab fa-github"></i
+            ></a>
+          </li>
+          <li class="banner-social__item">
+            <a
+              href="https://www.linkedin.com/in/t%C3%A0i-nguy%E1%BB%85n-649865220/"
+              target="_blank"
+            >
+              <i class="banner-social__icon fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="banner-social__item">
+            <a
+              href="https://www.instagram.com/ngtantaiiii/?hl=vi"
+              target="_blank"
+            >
+              <i class="banner-social__icon fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- End banner -->
+
+      <!-- About -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="about">
+            <div class="about-left">
+              <h2 class="about__title">About</h2>
+              <p class="about-left__desc">
+                Hello! My name is Tai. I am a third year student at University
+                of Science
+              </p>
+            </div>
+            <div class="about-right">
+              <h3 class="about__title">Basic Information</h3>
+              <table>
+                <tr>
+                  <th>Age</th>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td>nguyentai21.fit@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Phone</th>
+                  <td>0961942132</td>
+                </tr>
+                <tr>
+                  <th>University</th>
+                  <td>VNUHCM-University of Science</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End about -->
+
+      <!-- Skills -->
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <h2 class="skills__title">My Skills</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__name">HTML</p>
+              <div class="skills__icon"><i class="fab fa-html5"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">CSS</p>
+              <div class="skills__icon"><i class="fab fa-css3-alt"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Bootstrap</p>
+              <div class="skills__icon"><i class="fab fa-bootstrap"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Responsive</p>
+              <div class="skills__icon"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">SASS/SCSS</p>
+              <div class="skills__icon"><i class="fab fa-sass"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Version Control (Git)</p>
+              <div class="skills__icon"><i class="fab fa-git-alt"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Javascript</p>
+              <div class="skills__icon"><i class="fab fa-js-square"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">ReactJS</p>
+              <div class="skills__icon"><i class="fab fa-react"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Redux</p>
+              <div class="skills__icon"><i class="fas fa-tasks"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Firebase</p>
+              <div class="skills__icon"><i class="fas fa-fire"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">Soft skills</p>
+              <div class="skills__icon"><i class="fas fa-comments"></i></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__name">
+                Some package for website (Slick, React-hook form, yup, ...)
+              </p>
+              <div class="skills__icon"><i class="fas fa-book"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End skills -->
+
+      <!-- Projects -->
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <h2 class="projects__title">My Projects</h2>
+          <div class="projects">
+            <div class="projects__item">
+              <a target="_blank" href="https://e-commerce-app-5de96.web.app/">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=815&q=80"
+                  alt=""
+                  class="projects__image"
+                />
+                <div class="projects__overlay"></div>
+                <div class="projects__name">E-Commerce</div>
+                <div class="projects__language">HTML, CSS, JS</div>
+              </a>
+            </div>
+            <div class="projects__item">
+              <a target="_blank" href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=815&q=80"
+                  alt=""
+                  class="projects__image"
+                />
+                <div class="projects__overlay"></div>
+                <div class="projects__name">E-Commerce</div>
+                <div class="projects__language">HTML, CSS, JS</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projets -->
+
+      <!-- Education -->
+      <section class="education-section" id="education">
+        <div class="container">
+          <h2 class="education__title">Education</h2>
+          <div class="education">
+            <div class="education__item">
+              <div class="education__left">
+                <div class="education__years">2019 - 2023</div>
+                <div class="education__degree">Bachelor's Degree</div>
+              </div>
+              <div class="education__right">
+                <div class="education__heading">
+                  Bachelor of Information Technology
+                </div>
+                <div class="education__university">
+                  VNUHCM-University of Science
+                </div>
+                <div class="education__desc">
+                  Specialization: software engineering
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End education -->
+
+      <section class="contact-section" id="contact">
+        <div class="contact">
+          <ul class="contact-social">
+            <li class="contact-social__item">
+              <a href="https://www.facebook.com/ntt21082001" target="_blank">
+                <i class="contact-social__icon fab fa-facebook"></i
+              ></a>
+            </li>
+            <li class="contact-social__item">
+              <a href="https://github.com/tainguyen21" target="_blank">
+                <i class="contact-social__icon fab fa-github"></i
+              ></a>
+            </li>
+            <li class="contact-social__item">
+              <a
+                href="https://www.linkedin.com/in/t%C3%A0i-nguy%E1%BB%85n-649865220/"
+                target="_blank"
+              >
+                <i class="contact-social__icon fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="contact-social__item">
+              <a
+                href="https://www.instagram.com/ngtantaiiii/?hl=vi"
+                target="_blank"
+              >
+                <i class="contact-social__icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <h2 class="contact__name">Nguyen Tan Tai</h2>
+          <div class="contact__copyright">
+            <i class="far fa-copyright"></i>All rights reserved.
+          </div>
+        </div>
+      </section>
+
+      <script src="./script.js"></script>
+    </main>
+  </body>
 </html>
