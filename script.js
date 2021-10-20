@@ -1,4 +1,6 @@
 const header = document.getElementById("header");
+const toggleBtn = document.querySelector(".header__toggle");
+const headerNav = document.querySelector(".header__nav");
 
 const handleScroll = () => {
   if (window.scrollY >= 80) {
@@ -6,8 +8,7 @@ const handleScroll = () => {
   } else header.classList.remove("background");
 };
 
-window.onload = () => {
-  window.onscroll = handleScroll;
+const handleNavLinkClick = () => {
   const sections = [
     ".about-section",
     ".skills-section",
@@ -30,4 +31,21 @@ window.onload = () => {
 
     totalHeight += section.offsetHeight + 76;
   }
+};
+
+const handleToggleBtnClick = () => {
+  headerNav.classList.toggle("show");
+  toggleBtn.classList.toggle("show");
+
+  if (toggleBtn.classList.contains("show"))
+    toggleBtn.innerHTML = `<i class="fas fa-times"></i>`;
+  else toggleBtn.innerHTML = `<i class="fas fa-bars"></i>`;
+};
+
+window.onload = () => {
+  // AOS.init();
+  window.onscroll = handleScroll;
+  handleNavLinkClick();
+
+  toggleBtn.addEventListener("click", handleToggleBtnClick);
 };

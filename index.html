@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -42,6 +43,9 @@
             <li class="header__link"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <button class="header__toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </header>
     <!-- End header -->
@@ -103,8 +107,13 @@
             <div class="about-left">
               <h2 class="about__title">About</h2>
               <p class="about-left__desc">
-                Hello! My name is Tai. I am a third year student at University
-                of Science
+                I am a third-year student majoring in software engineering at
+                VNUHCM-University of Science. I have basic knowledge of
+                front-end techniques. I love structure and order and I also
+                stand for quality. I love spending time on fixing little details
+                and optimizing web apps. Also I like working in a team, you'll
+                learn faster and much more. As the saying goes: 'two heads are
+                better than one'.
               </p>
             </div>
             <div class="about-right">
@@ -183,9 +192,7 @@
               <div class="skills__icon"><i class="fas fa-comments"></i></div>
             </div>
             <div class="skills__item">
-              <p class="skills__name">
-                Some package for website (Slick, React-hook form, yup, ...)
-              </p>
+              <p class="skills__name">Slick, React-hook form, yup, ...</p>
               <div class="skills__icon"><i class="fas fa-book"></i></div>
             </div>
           </div>
@@ -208,6 +215,9 @@
                 <div class="projects__overlay"></div>
                 <div class="projects__name">E-Commerce</div>
                 <div class="projects__language">HTML, CSS, JS</div>
+                <div class="projects__link">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </a>
             </div>
             <div class="projects__item">
@@ -220,6 +230,9 @@
                 <div class="projects__overlay"></div>
                 <div class="projects__name">E-Commerce</div>
                 <div class="projects__language">HTML, CSS, JS</div>
+                <div class="projects__link">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
               </a>
             </div>
           </div>
@@ -242,10 +255,16 @@
                   Bachelor of Information Technology
                 </div>
                 <div class="education__university">
-                  VNUHCM-University of Science
+                  VNUHCM-University of Science (Specialization: software
+                  engineering)
                 </div>
                 <div class="education__desc">
-                  Specialization: software engineering
+                  I have studied many programming-related courses such as:
+                  introduction to programming, object-oriented programming, data
+                  structures, computer networks, operating systems,... I'm also
+                  learning specialized subjects such as: web application
+                  development, and besides that I took more courses on web
+                  development and UI/UX.
                 </div>
               </div>
             </div>
@@ -291,6 +310,7 @@
         </div>
       </section>
 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="./script.js"></script>
     </main>
   </body>

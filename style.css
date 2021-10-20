@@ -20,6 +20,7 @@ body {
   transition: all linear 0.25s;
 }
 .header__container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,6 +41,7 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
+  transition: all 0.3s linear;
 }
 .header__link {
   margin: 0 8px;
@@ -55,6 +57,18 @@ body {
 }
 .header__link a:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.header__toggle {
+  display: none;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  transition: all 0.35s linear;
+  cursor: pointer;
+}
+.header__toggle i {
+  font-size: 2.8rem;
 }
 
 .banner {
@@ -181,7 +195,7 @@ body {
   padding-right: 48px;
 }
 .about-left__desc {
-  line-height: 1.4;
+  line-height: 1.6;
   color: #5c5c5c;
 }
 .about-right {
@@ -192,7 +206,7 @@ body {
   width: 100%;
 }
 .about-right table tr:not(:last-child) {
-  height: 30px;
+  height: 40px;
 }
 .about-right table th {
   font-weight: bold;
@@ -288,6 +302,9 @@ body {
   font-weight: 500;
   margin-bottom: 24px;
 }
+.projects__link {
+  display: none;
+}
 .projects__image {
   position: absolute;
   top: 0;
@@ -328,7 +345,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 20%;
   padding: 60px 0;
   background-color: #4da24a;
 }
@@ -343,6 +360,7 @@ body {
   font-weight: 500;
 }
 .education__right {
+  width: 80%;
   padding: 32px;
 }
 .education__heading {
@@ -353,6 +371,9 @@ body {
   font-weight: bold;
   color: #9a9a9a;
   margin-bottom: 24px;
+}
+.education__desc {
+  line-height: 1.6;
 }
 
 .contact {
@@ -389,6 +410,326 @@ body {
 }
 .contact__copyright i {
   margin-right: 12px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .header {
+    height: 60px;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    flex-direction: column;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 60px;
+    width: 280px;
+    background: linear-gradient(#378c3f 0%, #000 80%);
+  }
+  .header__nav.show {
+    right: 0;
+  }
+  .header__link {
+    width: 100%;
+    margin: 6px 0;
+  }
+  .header__link a {
+    display: block;
+    font-size: 1.4rem;
+    padding-left: 12px;
+  }
+  .header__toggle {
+    display: block;
+  }
+  .header__toggle.show {
+    transform: translateX(-270px);
+  }
+
+  .banner {
+    height: 420px;
+  }
+  .banner__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+  }
+  .banner__name {
+    font-size: 2.4rem;
+  }
+  .banner__job {
+    font-size: 1.6rem;
+  }
+  .banner__btn {
+    padding: 12px 16px;
+    font-size: 1.4rem;
+  }
+  .banner-social__item a {
+    padding: 14px;
+  }
+  .banner-social__item__icon {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    padding: 24px;
+  }
+  .about__title {
+    font-size: 2rem;
+  }
+  .about-left {
+    padding-right: 24px;
+  }
+  .about-left__desc {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  .about-right {
+    padding-left: 0;
+  }
+  .about-right tr:not(:last-child) {
+    height: 30px;
+  }
+  .about-right th,
+.about-right td {
+    font-size: 1.4rem;
+  }
+
+  .skills__title {
+    font-size: 2rem;
+  }
+  .skills__name {
+    font-size: 1.4rem;
+  }
+  .skills__icon i {
+    font-size: 2rem;
+  }
+
+  .projects__title {
+    font-size: 2rem;
+  }
+  .projects__item {
+    height: 200px;
+  }
+  .projects__overlay {
+    transform: translate(0, 0);
+  }
+  .projects__name, .projects__language {
+    opacity: 1;
+    visibility: visible;
+  }
+  .projects__name {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  .projects__language {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+  .projects__link {
+    display: block;
+    cursor: pointer;
+  }
+  .projects__link i {
+    color: white;
+    font-size: 2.4rem;
+  }
+
+  .education__title {
+    font-size: 2rem;
+  }
+  .education__degree {
+    font-size: 1.4rem;
+  }
+  .education__right {
+    padding: 16px;
+  }
+  .education__heading {
+    font-size: 1.8rem;
+  }
+  .education__university {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  .education__desc {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .contact_section {
+    margin: 40px 0;
+  }
+  .contact-social {
+    margin-bottom: 32px;
+  }
+  .contact-social__icon {
+    font-size: 2.6rem;
+  }
+  .contact__name {
+    font-size: 2.2rem;
+  }
+  .contact__copyrigt {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__title {
+    display: none;
+  }
+  .header__nav {
+    width: 150px;
+    padding-top: 30px;
+  }
+  .header__toggle.show {
+    transform: translateX(-150px);
+  }
+  .header__link a {
+    font-size: 1.2rem;
+  }
+
+  .banner {
+    height: 340px;
+    padding-top: 80px;
+  }
+  .banner__image {
+    width: 60px;
+    height: 60px;
+  }
+  .banner__name {
+    font-size: 2rem;
+  }
+  .banner__job {
+    font-size: 1.4rem;
+  }
+  .banner__btn {
+    padding: 8px 12px;
+    font-size: 1.2rem;
+  }
+  .banner-social__icon {
+    font-size: 1.6rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about-section {
+    margin-top: 40px;
+  }
+  .about__title {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  .about-left, .about-right {
+    width: 100%;
+  }
+  .about-left {
+    padding: 0;
+  }
+  .about-left__desc {
+    font-size: 1.2rem;
+  }
+  .about-right {
+    margin-top: 24px;
+  }
+  .about-right table tr:not(:last-child) {
+    height: 20px;
+  }
+  .about-right table th,
+.about-right table td {
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    grid-gap: 24px;
+  }
+  .skills-section {
+    margin-top: 40px;
+  }
+  .skills__title {
+    font-size: 1.8rem;
+  }
+  .skills__name {
+    font-size: 1.2rem;
+  }
+  .skills__icon {
+    margin-left: 8px;
+  }
+  .skills__icon i {
+    font-size: 1.6rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    padding: 16px;
+  }
+  .projects-section {
+    margin-top: 40px;
+  }
+  .projects__title {
+    font-size: 1.8rem;
+  }
+  .projects__item {
+    height: 170px;
+  }
+  .projects__name {
+    font-size: 1.6rem;
+  }
+  .projects__language {
+    font-size: 1.2rem;
+  }
+  .projects__link i {
+    font-size: 2rem;
+  }
+
+  .education-section {
+    margin-top: 40px;
+  }
+  .education__title {
+    font-size: 1.8rem;
+  }
+  .education__item {
+    flex-direction: column;
+  }
+  .education__left {
+    width: 100%;
+    padding: 32px 0;
+  }
+  .education__years {
+    font-size: 1.6rem;
+  }
+  .education__right {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+  }
+  .education__heading {
+    font-size: 1.6rem;
+  }
+  .education__desc {
+    font-size: 1.2rem;
+  }
+
+  .contact-section {
+    margin: 40px 0;
+  }
+  .contact-social {
+    margin-bottom: 16px;
+  }
+  .contact-social__item {
+    margin: 0 8px;
+  }
+  .contact-social__icon {
+    font-size: 2rem;
+  }
+  .contact__name {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  .contact__copyright {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
