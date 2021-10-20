@@ -36,6 +36,11 @@ body {
     color: white;
     font-size: 1.8rem;
     text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
   }
 
   &__nav {

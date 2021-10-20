@@ -32,6 +32,10 @@ body {
   color: white;
   font-size: 1.8rem;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.header__title:hover {
+  color: white;
 }
 .header__nav {
   display: flex;
